@@ -1,0 +1,36 @@
+.message-wrapper {
+    width: 100%;
+    min-height: 8vh;
+}
+.message-container {
+    display: block;
+    width: auto;
+    max-width: 85%;
+    border-radius: 10px;
+    padding: 1vw;
+}
+
+.message-container.left{
+    float: left;
+    margin-left: 1vw;
+    background-color: #fff; 
+}
+
+.message-container.right{
+    float: right;
+    margin-right: 1vw;
+    background-color: #E9F5E9;
+}
+
+.message-body, .message-datetime {
+    display: block;
+}
+
+.message-body {
+    font-size: 16pt;
+}
+
+.message-datetime {
+    color: #c2c2c2;
+    float: right;
+}

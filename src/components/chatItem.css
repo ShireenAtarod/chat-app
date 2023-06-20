@@ -1,0 +1,29 @@
+.chat-item-container {
+    width: 95%;
+    height: 10vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 10vh auto;
+    border-radius: 10px;
+}
+
+.chat-item-container:hover {
+    cursor: pointer;
+    background-color: rgba(227, 237, 225, .6);
+}
+
+.chat-avatar {
+    width: auto;
+    height: 9vh;
+    border-radius: 50%;
+    display: flex;
+    margin: auto 0;
+}
+
+.chat-name {
+    display: flex;
+    align-items: center;
+    margin-left: 1vw;
+    font-size: 18pt;
+    font-weight: 500;
+}
