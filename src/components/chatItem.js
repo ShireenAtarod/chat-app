@@ -9,6 +9,11 @@ function ChatItem(props){
             <img src={props.chat.avatar} className='chat-avatar' />
             <span className='chat-name'>
                 {props.chat.username}
+                {props.itIsMe && 
+                    <span className='my-profile'>
+                        {props.showProfile ? 'back' : 'view profile'}
+                    </span>
+                }
             </span>
         </div>
     )

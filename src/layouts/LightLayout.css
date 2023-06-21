@@ -3,5 +3,5 @@
     height: 100vh;
     background-color:#eef6fd;
     display: grid;
-    grid-template-columns: 470px auto;
+    grid-template-columns: 350px auto;
 }

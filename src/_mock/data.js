@@ -1,9 +1,12 @@
 import girlAvatar from '../assets/girlAvatar.jpg';
+import girlAvatar2 from '../assets/girlAvatar2.jpg';
 import boyAvatar from '../assets/boyAvatar.jpg';
 import boyAvatar2 from '../assets/boyAvatar2.jpg';
 import boyAvatar3 from '../assets/boyAvatar3.jpg';
 
-export const me = {id: '0', username: 'Shireen'}
+export const me = {id: '0', username: 'Shireen', avatar: girlAvatar2,
+                   firstName: 'Shireen', lastName: 'Atarod', 
+                   phone: '+989388906897', email: 'shireen.atarod@gmail.com'}
 
 export const chatList = [
     {id: '1', username: 'Ghazale', avatar: girlAvatar},

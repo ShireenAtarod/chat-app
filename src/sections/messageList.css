@@ -7,6 +7,27 @@
     background: linear-gradient(235deg, rgba(110,167,136,1) 0%, rgba(201,212,160,1) 50%, rgba(140,186,134,1) 100%);
 }
 
+.messages-header{
+    background: #eef6fd;
+    margin-bottom: 3vh;
+    max-height: 6vh;
+}
+
+.messages-header .chat-item-container {
+    max-height: 5vh;
+    grid-template-columns: 5vh auto;
+    border: none;
+}
+
+.messages-header .chat-avatar{
+    height: 4.5vh;
+}
+
+.messages-header .chat-name {
+    font-size: 14pt;
+    font-weight: 300;
+}
+
 .new-message-wrapper {
     width: 100%;
     padding: 1vw;
@@ -15,14 +36,14 @@
 }
 
 .new-message-container {
-    display: grid;
-    grid-template-columns: auto 5vw;
+    display: flex;
     width: 68vw;
 }
 
 .new-message-body {
-    min-height: 6vh;
+    min-height: 4vw;
     max-height: 8vh;
+    width: 85%;
     overflow: auto;
     border: none;
     outline: none;

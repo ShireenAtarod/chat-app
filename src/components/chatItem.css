@@ -12,6 +12,12 @@
     background-color: rgba(227, 237, 225, .6);
 }
 
+.chat-item-container:first-child {
+    border-bottom: 1px solid #c1c1c1;
+    border-radius: 0;
+    margin-bottom: 3vh;
+}
+
 .chat-avatar {
     width: auto;
     height: 9vh;
@@ -22,8 +28,15 @@
 
 .chat-name {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 1vw;
-    font-size: 18pt;
+    font-size: 17pt;
     font-weight: 500;
+}
+
+.my-profile {
+    font-size: 12pt;
+    font-weight: 200;
+    color: #141414;
 }

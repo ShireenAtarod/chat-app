@@ -5,23 +5,26 @@ import LightLayout from '../layouts/LightLayout';
 import UserList from '../sections/userList';
 import MessageList from '../sections/messageList';
 // mock data
-import { me } from '../_mock/data';
+import { me, chatList } from '../_mock/data';
 
 const UserContext = createContext();
 
 function Home(){
     const [chatId, setChatId] = useState(null);
+    const [peer, setPeer] = useState(null);
     const [user, setUser] = useState(me)
 
     const selectChat = useCallback((id) => {
         setChatId(id);
+        let chatPeer = chatList.find((peer) => peer.id===id);
+        setPeer(chatPeer);
     }, [])
 
     return(
         <UserContext.Provider value={user}>
             <LightLayout>
                 <UserList onClick={selectChat} />
-                <MessageList chatId={chatId} />
+                <MessageList chatId={chatId} peer={peer} />
             </LightLayout>
         </UserContext.Provider>
     )
