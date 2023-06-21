@@ -37,7 +37,7 @@
 .form-button {
     position: fixed;
     bottom: 3vh;
-    left: 210px;
+    left: calc(350px - 10vw);
     width: 9vw;
     height: 4vh;
     border: none;

@@ -28,27 +28,40 @@
     font-weight: 300;
 }
 
+.message-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    height: 74vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 .new-message-wrapper {
-    width: 100%;
+    width: calc(100vw - 380px);
+    height: 12vh;
     padding: 1vw;
     position: fixed;
-    bottom: 1vh
+    bottom: 0; 
+    display: flex;
+    justify-content: flex-end;   
 }
 
 .new-message-container {
-    display: flex;
-    width: 68vw;
+    display: grid;
+    grid-template-columns: 92% 8%;
+    width: 100%;
 }
 
 .new-message-body {
     min-height: 4vw;
     max-height: 8vh;
-    width: 85%;
+    width: 95%;
     overflow: auto;
     border: none;
     outline: none;
     border-radius: 15px;
-    margin: 1vh;
+    margin: auto 1vh;
     padding: 0 1vw;
     box-shadow: 0 0 3px #9b9999;
     font-size: 16pt;

@@ -36,17 +36,25 @@ function MessageList(props) {
     return (
         <>
             <div className='message-list'>
+                
                 {props.chatId && 
                   <div className='messages-header'>
                     <ChatItem chat={props.peer} onClicl={()=>{}} />
                   </div>
                 }
-                {(reload || !reload) && messages.map((message) => (
-                    <Message message={message} />
-                ))}
+
+                {messages.length !== 0 &&
+                    <div className='message-list-wrapper'>
+                        {(reload || !reload) && messages.map((message) => (
+                            <Message message={message} />
+                        ))}
+                    </div>
+                }
+
                 {messages.length === 0 &&
                     <span className='no-message'>Start Messaging</span>
                 }
+
                 {props.chatId && 
                   <form className='new-message-wrapper' onSubmit={send}>
                     <div className='new-message-container'>
